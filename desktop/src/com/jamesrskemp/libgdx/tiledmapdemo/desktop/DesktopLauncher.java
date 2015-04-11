@@ -14,7 +14,6 @@ public class DesktopLauncher {
 			TexturePacker.process(settings, "raw", "packed", "sample.atlas");
 		}
 
-
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.width = 800;
 		config.height = 480;
