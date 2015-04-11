@@ -27,6 +27,7 @@ public class TiledMapDemo extends ApplicationAdapter {
 		camera.update();
 
 		stage = new TiledMapStage(tiledMap);
+		// Don't forget to set the camera; otherwise you'll be wondering why things don't line up.
 		stage.getViewport().setCamera(camera);
 		Gdx.input.setInputProcessor(stage);
 	}
