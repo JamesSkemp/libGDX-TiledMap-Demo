@@ -21,9 +21,10 @@ public class TiledMapDemo extends ApplicationAdapter {
 	@Override
 	public void create () {
 		tiledMap = new AtlasTmxMapLoader().load("packed/sample.tmx");
-		renderer = new OrthogonalTiledMapRenderer(tiledMap, 1 / 2f);
+		renderer = new OrthogonalTiledMapRenderer(tiledMap, 1);
 
 		camera = new OrthographicCamera();
+		camera.setToOrtho(false, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		camera.update();
 
 		stage = new TiledMapStage(tiledMap);
